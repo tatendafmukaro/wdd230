@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Birthstone+Bounce&display=swap');
 body{
-    max-width: 960px;
+    max-width: 760px;
     margin: 0 auto;
     padding: 50px;
   }
+  main li{
+    align-items: center;
+  }
   
   h1{
-    text-align: center;  
+    text-align: left;  
     color: white;
     font-family: 'Amatic SC', cursive;
+    margin:  auto 100px;
    
   }
   h2{
@@ -24,11 +28,11 @@ body{
   }
   
   header img{ 
-    border-radius: 5px;
-    display: fixed;
+    border-radius: 10px;
     width: 30%;
     float: right ;
     margin-right: 10%;
+    margin-top: -30px;
   }
   
   footer{
@@ -39,7 +43,7 @@ body{
    margin-top: 100px ;
    padding: 10px;
   }
-  a{
+  footer a{
       color: white;
   }
   
