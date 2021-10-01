@@ -27,8 +27,7 @@ header{
   padding: 5px;
 }
 header a{
-  font-style: none;
-  text-underline-offset: none;
+
   padding: 10px;
   color: white;
 }
