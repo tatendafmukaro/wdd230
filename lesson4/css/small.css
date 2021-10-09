@@ -51,7 +51,7 @@ body{
     color: white;
     margin-left: 20px;
     font-size: .9rem;
-    background-color: none;
+   
   }
 nav{
   padding: 10px;
@@ -87,6 +87,23 @@ nav{
     background-color: yellow;
   }
  
+
+  nav button {
+
+    padding: 10px 14px;
+    background-color:#000E1B;
+    color: whitesmoke;
+    border: none; 
+    border-radius: 5px;
+    border-width: 0 10px;
+    margin: 0.5rem 6%;
+    font-size: 16px; 
+}
+
+nav ul.mainNav{
+  display:none;
+}
+
   main{
     background-color: white;
     padding: 10px;
@@ -155,22 +172,7 @@ nav{
   
 
 
-  nav button {
-    border-radius: 5px;
-    border-width: 0 10px;
-    margin: 0.5rem 6%;
-    font-size: 16px;
-    padding: 10px 14px;
-  background-color:#000E1B;
-    color: whitesmoke;
-    border: none;
-    font-family: 'Asul', sans-serif;
-
-}
-
-nav ul.mainNav{
-  display:none;
-}
+  
 
 
 

@@ -1,8 +1,8 @@
 @media (min-width: 32.5em){
 
-    nav button {
-        display: none;
-    }
+    nav ul.mainNav{
+        display:flex;
+      }
 
     nav ul {
         display: flex;
@@ -16,9 +16,12 @@
     }
 
    
-    
+    nav button {
+        display: none;
+    }
 
- 
+  
+
 
     }
 
