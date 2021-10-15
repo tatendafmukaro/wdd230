@@ -1,0 +1,180 @@
+
+body{
+    max-width: 100%;
+    background-color: orange;
+  
+  }
+ 
+
+  h1 img{
+    display: inline-block;
+  }
+
+
+
+  h2{
+    text-align: left;
+  }
+  
+  header{
+    
+    background-color: #000E1B;
+    padding: 5px 0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+  }
+   
+  header img{ 
+    width: 100px;
+    height: auto;
+   
+  }
+
+  .headings {
+    display: flex;
+    flex-direction: column;
+  }
+  .headings h1 {
+    font-size: 40px;
+    margin: 0 0 0 17px;
+    text-align: center;  
+    color: white;
+    font-family: 'Amatic SC', cursive,sans-serif ,arial; 
+    
+  }
+  
+  .theme {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: white;
+    margin-left: 20px;
+    font-size: .9rem;
+   
+  }
+nav{
+  padding: 10px;
+}
+
+  nav ul{
+   display: block;
+   list-style: none;
+   margin: 0 auto;
+   padding: 0;
+  }
+  
+  nav ul li { 
+    flex: 1 1 100%; 
+    margin: 0 auto;
+    font-size: 17px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bolder;
+   
+  
+   } 
+
+   nav ul li  a{
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+   
+   }
+   
+   nav ul li a:hover {
+    background-color: yellow;
+  }
+ 
+
+  nav button {
+
+    padding: 10px 14px;
+    background-color:#000E1B;
+    color: whitesmoke;
+    border: none; 
+    border-radius: 5px;
+    border-width: 0 10px;
+    margin: 0.5rem 6%;
+    font-size: 16px; 
+}
+
+nav ul.mainNav{
+  display:none;
+}
+
+  main{
+    background-color: white;
+    padding: 10px;
+  }
+  .main-page{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  
+  }
+
+ main p{
+    padding: 10px;
+    background-color: gainsboro;
+  }
+  main h2{
+    text-align: center;
+  }
+  .empty-container1{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #000E1B 1px;
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 2px;
+    
+  }
+  .empty-container2{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #000E1B 1px;
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 2px;
+  }
+  .empty-container3{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #000E1B 1px;
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 2px;
+    
+  }
+  .empty-container4{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #000E1B 1px;
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 2px;
+    
+  }
+  
+  footer{
+   border-radius: 5px;
+   text-align: center;
+   background-color: #000E1B;
+   color : white;
+   margin-top: 100px ;
+   padding: 10px;
+  }
+  footer a{
+      color: white;
+  }
+  
+
+
+  
+
+
+
+ 
+
