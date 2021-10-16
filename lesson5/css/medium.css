@@ -19,7 +19,10 @@
     nav button {
         display: none;
     }
-
+    .stats {
+        position: absolute;
+  
+    }
   
 
 

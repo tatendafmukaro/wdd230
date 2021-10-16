@@ -75,6 +75,14 @@ nav{
   
    } 
 
+
+   #nav li a:active {
+    background: black;
+    color: #ffffff;
+}
+
+
+
    nav ul li  a{
     color: black;
     text-decoration: none;
@@ -148,15 +156,7 @@ nav ul.mainNav{
     margin: 2px;
     
   }
-  .empty-container4{
-    box-sizing: border-box;
-    width: 100%;
-    border: solid #000E1B 1px;
-    background-color: gainsboro;
-    padding: 5px;
-    margin: 2px;
-    
-  }
+
   
   footer{
    border-radius: 5px;
@@ -169,12 +169,131 @@ nav ul.mainNav{
   footer a{
       color: white;
   }
+
+  img{
+    width: 100%;
+  }
+
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    grid-gap:2px;
+    background-color: grey;
+
+  }
+
+  .contacts1 img{
+    max-width: 10%;
+    border-radius: 5px;
+  }
+  .contacts1{
+    grid-column: 2/3;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 2px;
   
-
-
   
+  }
+  .second-item{
+   grid-column: 3/4;
+	grid-row: 1 ;
+    padding: 10px;
+    margin: 2px;
+  
+  }
 
 
 
+  h2{
+    text-align: center;
+  }
+  .herodiv{
+    width: 960px;
+    height: 300px;
+    margin: 10px auto;
+    position: relative;
+    border: 1px dashed cyan;
+  }
+  
+  .hero-ph{
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #eee;
+    border:  1px solid grey;
+    width: 90%;
+    height:250px;
+  
+  }
+  
+  .weathersummary{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    background: radial-gradient(green, lightgreen);
+    border: 1px solid green;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 0 30px #777;
+  }
+
+  .article1{
+
+    display: block;
+ 
+  }
+
+
+  .article1 img{
+    max-width: 25%;
+    border-radius: 5px;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+
+
+  }
+
+
+
+  /* Grid */
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
  
 
+}
+.grid-col {
+	background-color: #000E1B;
+  padding: 10px;
+  margin:2px;
+}
+
+.weather-focust img{
+  max-width: 30%;
+
+}
+.weather-focust h2{
+  background-color:#ccc;
+  padding: 10px;
+  
+  margin: 0;
+}
+
+.stats {
+	position: sticky;
+	top: 300px;
+	right: 1000px;
+	background: radial-gradient(#eee, orange );
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #000E1B ;
+	opacity: .9;
+}
+
+
+.grid span{
+  color: white;
+ 
+}
