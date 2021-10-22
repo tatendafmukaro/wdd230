@@ -16,7 +16,7 @@ document.getElementById("cd").textContent = fullDate;
 function toggleMenu(){
     document.getElementById("menu").classList.toggle("mainNav");
 }
-
+const fridayBanner = document.querySelector('#friday-banner')
 
 
 

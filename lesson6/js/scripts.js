@@ -17,7 +17,7 @@ function toggleMenu(){
     document.getElementById("menu").classList.toggle("mainNav");
 }
 
-// banner to be visible on Friday only
+// friday banner querry
 const fridayBanner = document.querySelector('#friday-banner')
 
 

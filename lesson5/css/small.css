@@ -44,6 +44,17 @@ body{
     font-family: 'Amatic SC', cursive,sans-serif ,arial; 
     
   }
+  .text-wrapper{
+    text-align: right;
+    background-color: grey;
+    color: yellow;
+    padding: 5px;
+    
+    border-radius: 5px;
+
+ 
+  }
+  
   
   #friday-banner{
   color: grey;
