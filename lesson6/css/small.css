@@ -45,8 +45,18 @@ body{
     
   }
   
-  #friday-banner{
-  color: grey;
+  .text-wrapper{
+    text-align: right;
+    background-color: grey;
+    color: yellow;
+    padding: 5px;
+    
+    border-radius: 5px;
+ 
+  
+
+
+ 
   }
   .theme {
     font-style: italic;
