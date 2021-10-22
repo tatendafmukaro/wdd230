@@ -49,14 +49,12 @@ body{
     background-color: grey;
     color: yellow;
     padding: 5px;
-    
     border-radius: 5px;
   }
   
   
-  #friday-banner{
-  color: grey;
-  }
+ 
+
   .theme {
     font-style: italic;
     letter-spacing: 1pt;
