@@ -317,3 +317,40 @@ nav ul.mainNav{
   color: white;
  
 }
+
+
+
+/*Lazy Image Loading*/
+h2{
+  font-family: arial, sans-serif ; 
+  font-style: italic;
+}
+
+main figure img {
+  margin: auto;
+   max-width: 100%;
+   
+}
+
+figcaption {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  color: white;
+}
+
+main figure {
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: block;
+  text-align: center;
+  padding: 0 0 10px 0;
+  
+}
+
+.image1{
+border-style: solid;
+background-color: #000E1B;
+border-color: #000E1B;
+padding: auto;
+}

@@ -33,6 +33,4 @@ document.querySelector(".windchill").textContent = windchill_value;
 
 
 
-
-
-
+/*Lazy Image Loading */
