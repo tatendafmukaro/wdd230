@@ -47,86 +47,91 @@
 		</ul>
 	</nav>
 	<main class="main-page">
-		<!--<h2>WDD 230: Site Plan Home Page</h2>  -->
-		<h2 class="page-title">Preston Idaho
-      </h2>
-		<section class="empty-container1">
-			<picture>
-				<source srcset="images\wdd230_image_franklinOriginal-small300px.jpg" media="(min-width: 300px) and (max-width: 599px)">
-				<source srcset="images\wdd230_image_franklinOriginal-medium600px.jpg" media="(min-width: 600px) and (max-width: 799px)">
-				<source srcset="images\wdd230_image_franklinOriginal.jpg" media="(min-width: 800px) and (max-width: 1200px)"> <img src="images\wdd230_image_franklinOriginal.jpg" alt="preston-banner"> </picture>
-			<section class="stats">
-				<h2  class="summary-title" >Weather Summary</h2>
-				<div class="summarygrid">
-				<p>Wind Chill: <span class="windchill"> </span>°F</p>
-				<p>Temperature:<span class="temperature">76</span> °F</p>
-				<p>Wind Speed: <span class="windspeed">10</span> mph</p>
-			</div>
-			</section>
-		</section>
-		<br>
-		<section class="weather-focust">
-			<h2>5 Day Weather Forecast
-        </h2>
-			<div class="grid">
-				<div class="grid-col"> <span class="col-head">Monday
-            </span>
-					<br>
-					<br> <img src="images\cloudy.png" alt="weekdays">
-					<br>
-					<br> <span class="data">55 &#8451;
-            </span> </div>
-				<div class="grid-col"> <span class="col-head">Tuesday
-            </span>
-					<br>
-					<br> <img src="images\cloud.png" alt="weekdays">
-					<br>
-					<br> <span class="data">46 &#8451;
-            </span> </div>
-				<div class="grid-col"> <span class="col-head">Wednesday
-            </span>
-					<br>
-					<br> <img src="images\sunny.png" alt="weekdays">
-					<br>
-					<br> <span class="data">23 &#8451;
-            </span> </div>
-				<div class="grid-col"> <span class="col-head">Thursday
-            </span>
-					<br>
-					<br> <img src="images\sunny.png" alt="weekdays">
-					<br>
-					<br> <span class="data">20 &#8451;
-            </span> </div>
-				<div class="grid-col"> <span class="col-head">Friday
-            </span>
-					<br>
-					<br> <img src="images\sunny.png" alt="weekdays">
-					<br>
-					<br> <span class="data">32 &#8451;
-            </span> </div>
-				<div class="grid-col"> <span class="col-head">Saturday
-            </span>
-					<br>
-					<br> <img src="images\cloudy.png" alt="weekdays">
-					<br>
-					<br> <span class="data">33 &#8451;
-            </span> </div>
-			</div>
-		</section>
-		<section class="article1">
-			<h3>Preston Falls - An epic Wonder!
-        </h3>
-			<br>
-			<hr>
-			<p>
-				<picture> <img src="images\preston-2.jpg" alt="preston-banner"> </picture> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, fugiat cum quos rem eos perspiciatis ipsam dolorum saepe at nihil dolore iure corporis ratione magni recusandae itaque cumque, explicabo officiis?
-				<br>
-				<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque est atque facere totam, cumque nisi minima illo, soluta hic doloribus sed nam quis non, laborum inventore? Quidem nihil atque eius.
-				<br>
-				<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusantium beatae nemo esse possimus officia, facilis, expedita ipsam, sed illum et eveniet autem ab quaerat obcaecati animi libero. Provident, enim.
-				<br>
-				<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa nesciunt vitae laborum, officiis ad ut cumque nobis corporis placeat quae, a dolore voluptate debitis laboriosam quam doloribus nemo eius! </p>
-		</section>
+		<header class="stormheader">
+            <h2>Storm Center Update</h2>
+            <h3>Contact us for any quiries you might have</h3>
+        </header>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <label class="pinfo">Your Name: <input type="text" name="fname" required placeholder="Felix Mukaro"
+                        pattern="[A-Za-z]{5}"></label>
+                <label class="pinfo">Your email please: <input type="email"></label>
+                <label class="pinfo">Phone Number: <input type="tel" name="phone" placeholder="803555789"
+                        required></label>
+
+            </fieldset>
+            <fieldset>
+                <label class="abtstm">Date of Storm: <input type="date" name="stormdate" required></label>
+                <!-- Storm Type list reference datalist of Flash Flood, Hail, Hurricane, Thurnderstorm, tornado -->
+                <label class="abtstm">What type of storm was it?
+                    <select name="typeofstorm">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="duststorm">Dust Storm</option>
+                        <option value="tornado">Tornado</option>
+                        <option value="hail">Hail</option>
+                        <option value="windstorm">Windstorm</option>
+                        <option value="blizzard">Blizzard</option>
+                    </select>
+                </label>
+
+                <label class="abtstm">How bad was the Storm?</label>
+                <p>0=That was fun 10=We almost died and the house blew away.</p>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <label class="region">Storm Region
+                    <select name="region">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="fishhaven">Fish Haven</option>
+                        <option value="sodasprings">Soda Springs</option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+
+            <!--RADIO-->
+            <fieldset>
+                <legend>Are you in trouble?</legend>
+                <div class="danger">
+                    <label for="yes"><input type="radio" id="yes" name="indanger" value="yes">
+                        Yes</label>
+                </div>
+                <div class="danger">
+                    <label for="maybe"><input type="radio" id="maybe" name="indanger" value="maybe"> Maybe</label>
+                </div>
+                <div class="danger">
+                    <label for="no"><input type="radio" id="no" name="indanger" value="no"> No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+
+                <div id="moreinfo">
+                    <label for="moreinfo">Update us on the nature of the storm</label>
+                    <textarea name="moreinfo" id="moreinfo" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <div>
+            <input id="submitbutton" type="submit" value="Thanks for your reporting!">
+        </div>
+        </form>
 	</main>
 	<footer>
 		<hr>
