@@ -18,7 +18,7 @@ function toggleMenu(){
 }
 
 // friday banner querry
-const fridayBanner = document.querySelector('#friday-banner')
+//const fridayBanner = document.querySelector('#friday-banner')
 
 // wind chill calculator
 let temp = document.querySelector(".temperature").textContent;
@@ -33,4 +33,17 @@ document.querySelector(".windchill").textContent = windchill_value;
 
 
 
-/*Lazy Image Loading */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
