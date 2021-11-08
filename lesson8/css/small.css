@@ -472,6 +472,10 @@ margin:8px auto 10px auto;
   color: white;
 }
 
+.stormheadrh3{
+  text-align: center;
+}
+
 #submitbutton {
 	background-color: #000E1B;
 	color: #f1d013;
@@ -492,4 +496,13 @@ margin:8px auto 10px auto;
 	margin: 10px auto 10px auto;
 	line-height: 200%;
 	
+}
+
+.friday-banner {
+  padding: 1em;
+  text-align: center;
+  background-color: grey;
+  line-height: 1.85em;
+  display: none;
+  cursor: pointer;
 }

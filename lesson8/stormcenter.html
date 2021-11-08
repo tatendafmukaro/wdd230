@@ -17,9 +17,8 @@
 	<link rel="stylesheet" href="color-scheme.html"> </head>
 
 <body>
-	<div id="friday-banner" >
-		<div class="text-wrapper"> | Friday Treats - Free Pizza and Gifts | Preston Weekend Climate Party on Saturday</div>
-	</div>
+	<div class="friday-banner">Saturday = Preston Pancakes in the Park! &#129383;<br> | Friday Treats - Free Pizza and Gifts | Preston Weekend Climate Party on Saturday
+    </div>
 	<header>
 		<picture> <img src="images//weather-icon-png-11063.png" alt="weather-logo"> </picture>
 		<section class="headings">
@@ -48,14 +47,15 @@
 	</nav>
 	<main class="main-page">
 		<header class="stormheader">
-            <h2>Storm Center Update</h2>
-            <h3>Contact us for any quiries you might have</h3>
+            <h2>Storm Center Update</h2> 
+            <br><br>
         </header>
+        <h3 class="stormheadrh3" > Contact us for any quiries you might have</h3>
         <form method="get" action="thanks.html">
             <fieldset>
-                <label class="pinfo">Your Name: <input type="text" name="fname" required placeholder="Felix Mukaro"
+                <label class="pinfo">Full Name: <input type="text" name="fname" required placeholder="Tatenda Felix Mukaro"
                         pattern="[A-Za-z]{5}"></label>
-                <label class="pinfo">Your email please: <input type="email"></label>
+                <label class="pinfo">Email: <input type="email"></label>
                 <label class="pinfo">Phone Number: <input type="tel" name="phone" placeholder="803555789"
                         required></label>
                         <label class="pinfo">Zip Code: <input type="zip" name="phone" placeholder="Enter Zip Code"
@@ -63,21 +63,21 @@
 
             </fieldset>
             <fieldset>
-                <label class="abtstm">Date of Storm: <input type="date" name="stormdate" required></label>
-                <!-- Storm Type list reference datalist of Flash Flood, Hail, Hurricane, Thurnderstorm, tornado -->
-                <label class="abtstm">What type of storm was it?
+                <label class="abtstm">Storm Date: <input type="date" name="stormdate" required></label>
+        
+                <label class="abtstm">Storm Type
                     <select name="typeofstorm">
                         <option value="">Please Select &#9662;</option>
-                        <option value="duststorm">Dust Storm</option>
-                        <option value="tornado">Tornado</option>
+                        <option value="flashflood">Flash Flood</option>
                         <option value="hail">Hail</option>
-                        <option value="windstorm">Windstorm</option>
-                        <option value="blizzard">Blizzard</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
                     </select>
                 </label>
 
-                <label class="abtstm">How bad was the Storm?</label>
-                <p>0=That was fun 10=We almost died and the house blew away.</p>
+                <label class="abtstm">Storm Severity</label>
+                <p>0= Fun 10= Danger Zone</p>
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5</span>
@@ -111,7 +111,7 @@
 
             <!--RADIO-->
             <fieldset>
-                <legend>Are you in trouble?</legend>
+                <legend>Are you in Danger-Zone?</legend>
                 <div class="danger">
                     <label for="yes"><input type="radio" id="yes" name="indanger" value="yes">
                         Yes</label>
@@ -131,7 +131,7 @@
                 </div>
             </fieldset>
             <div>
-            <input id="submitbutton" type="submit" value="Thanks for your reporting!">
+            <input id="submitbutton" type="submit" value="Thank you for reporting!">
         </div>
         </form>
 	</main>
@@ -160,8 +160,8 @@
 		<br> <span id="theyear">
       </span> <span id="cd"> 
       </span> </footer>
-	<script src="js/scripts.js">
-	</script>
+    <script src="js/friday-banner.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
