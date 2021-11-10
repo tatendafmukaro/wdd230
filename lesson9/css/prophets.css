@@ -6,8 +6,6 @@ body {
   }
 
   main {
-    /* background-color: rgb(220, 220, 245); */
-    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     margin: 2rem 0;
     padding: .4rem 0;
   }
@@ -43,7 +41,6 @@ body {
 
   img {
       max-width: 80%;
-      /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */ */
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
  
