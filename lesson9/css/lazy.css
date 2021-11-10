@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 0;
+    
+    
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive,sans-serif ,arial; 
+  }
+  
+  img[data-src] {
+    filter: blur(0.3em);
+  }
+  
+  img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    border-radius: 5px;
+  }
+  .image-container{
+      border-style: solid;
+      background-color: #000E1B;
+      border-color: #000E1B;
+      padding: auto;
+  }
+
+  

@@ -1,0 +1,109 @@
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main {
+    /* background-color: rgb(220, 220, 245); */
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    margin: 2rem 0;
+    padding: .4rem 0;
+  }
+  
+  h1{
+    font-family: 'Amatic SC', sans-serif;
+    color: #202020;
+    font-size: 4rem;
+
+  }
+
+  h2{
+      font-family: 'PT Sans Narrow', Arial, sans-serif;
+      color: rgb(44, 13, 41);
+      font-size: 1rem;
+  }
+
+
+
+  p {
+    font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+     font-size: .8rem;
+  }
+
+  section {
+    border-style: solid;
+    border-color: #636363;
+    background-color: #F2F2F2;
+    margin: .8rem;
+    padding-bottom: .8rem;
+    border-radius: 5px;
+  }
+
+  img {
+      max-width: 80%;
+      /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */ */
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+ 
+  footer {
+      margin: 2rem 0;
+  }
+
+@media only screen and (min-width: 640px) and (max-width: 960px){
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: .8rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+}
+
+footer {
+    font-size: 1.2rem;
+}
+
+}
+
+  @media only screen and (min-width: 960px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 80%;
+    }
+
+    section {
+        margin: .3rem;
+    }
+    
+  }

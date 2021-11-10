@@ -1,0 +1,31 @@
+h2{
+	text-align: center;
+}
+.herodiv{
+	width: 960px;
+	height: 300px;
+	margin: 10px auto;
+	position: relative;
+	border: 1px dashed cyan;
+}
+
+.hero-ph{
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #eee;
+	border:  1px solid grey;
+	width: 90%;
+	height:250px;
+
+}
+
+.weathersummary{
+	position: absolute;
+	top: 60px;
+	left: 70px;
+	background: radial-gradient(green, lightgreen);
+	border: 1px solid green;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 0 0 30px #777;
+}
