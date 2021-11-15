@@ -7,6 +7,7 @@ body{
   }
   main li{
     align-items: center;
+    padding: 5px;
   }
   
   h1{
@@ -19,10 +20,12 @@ body{
   }
   ul {
     list-style: none;
+    
   }
 
  li ::before {
     content: "✔";
+   
 
   }
   

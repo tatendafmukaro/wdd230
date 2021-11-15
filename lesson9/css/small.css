@@ -143,7 +143,7 @@ nav ul.mainNav{
   
   }
 
- main p{
+ main .summarygrid p{
     padding: 10px;
     background-color: gainsboro;
   }
