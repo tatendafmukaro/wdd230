@@ -31,6 +31,7 @@ if ((temp <= 50) && (ws > 3)) {
 
 document.querySelector(".windchill").textContent = windchill_value;
 
+/*Lazy Image Loading ...........................*/
 
+/* Index Home Page JSON */
 
-/*Lazy Image Loading */

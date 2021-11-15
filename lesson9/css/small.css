@@ -355,6 +355,22 @@ border-color: #000E1B;
 padding: 5px;
 }
 
+.friday-banner {
+  padding: 1em;
+  text-align: center;
+  background-color: grey;
+  line-height: 1.85em;
+  display: none;
+  cursor: pointer;
+}
+
+
+.last-visited{
+  font-style: italic;
+  color: orange;
+}
+
+
 
 
 
@@ -498,11 +514,4 @@ margin:8px auto 10px auto;
 	
 }
 
-.friday-banner {
-  padding: 1em;
-  text-align: center;
-  background-color: grey;
-  line-height: 1.85em;
-  display: none;
-  cursor: pointer;
-}
+
