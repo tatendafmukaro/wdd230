@@ -28,9 +28,8 @@ fetch(requestURL)
 
 
 
-        image.setAttribute('src', `lesson9/images/towns/${xtown.photo}`);
-        
-       
+        // image.setAttribute('src', `lesson9/images/towns/${xtown.photo}`);
+        image.setAttribute('src', `images/${xtown.photo}`);
         image.setAttribute('alt', `nature photo in ${xtown.name}`);
         div.className = 'town-info';
         name.textContent = `${xtown.name}`;
@@ -41,6 +40,7 @@ fetch(requestURL)
 
         townCard.appendChild(image);
         townCard.appendChild(div);
+    
     
         div.appendChild(name);
         div.appendChild(motto);
