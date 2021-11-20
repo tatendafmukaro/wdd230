@@ -48,8 +48,8 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <label class="pinfo">Full Name: <input type="text" name="fname" required placeholder="Tatenda Felix Mukaro"
-                        pattern="[A-Za-z]{5}"></label>
-                <label class="pinfo">Email: <input type="email"></label>
+                        pattern="[A-Za-z0-9]{5,}"></label>
+                <label class="pinfo">Email: <input type="email" placeholder="example@qwerty.com" required> </label>
                 <label class="pinfo">Phone Number: <input type="tel" name="phone" placeholder="803555789"
                         required></label>
                         <label class="pinfo">Zip Code: <input type="text" name="phone" placeholder="Enter Zip Code"
@@ -105,8 +105,9 @@
 
             <!--RADIO-->
             <fieldset>
-                <legend>Are you in Danger-Zone?</legend>
+           
                 <div class="danger">
+                    <legend>Are you in Danger-Zone?</legend><br><br>
                     <label for="yes"><input type="radio" id="yes" name="indanger" value="yes">
                         Yes</label>
                 </div>
@@ -120,8 +121,9 @@
             <fieldset>
 
                 <div id="moreinfo">
-                    <label for="moreinfo1">Update us on the nature of the storm</label>
+                    <label for="moreinfo1"></label>
                     <textarea name="moreinfo" id="moreinfo1" cols="30" rows="10"></textarea>
+                    <figcaption>Update us on the nature of the storm</figcaption>
                 </div>
             </fieldset>
             <div>

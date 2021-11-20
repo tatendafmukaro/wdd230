@@ -420,12 +420,13 @@ article {
 }
 
 fieldset {
-	padding: 10px;
+	padding: 30px;
 	margin: 5px;
-	background-color:grey;
+	background-color:#C8C8C8;
 	display: block;
 	border-radius: 10px;
 }
+
 
 form {
 	max-width: 650px;
