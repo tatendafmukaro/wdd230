@@ -30,7 +30,15 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-
+img[data-src] {
+    filter: blur(1.0em);
+  }
+  
+  img {
+    filter: blur(0em);
+    transition: filter 1.0s;
+    border-radius: 5px;
+  }
 
 }
 

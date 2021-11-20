@@ -32,6 +32,16 @@ main figure:hover {
 	box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;
 }
   
+img[data-src] {
+    filter: blur(1.0em);
+  }
+  
+  img {
+    filter: blur(0em);
+    transition: filter 1.0s;
+    border-radius: 5px;
+  }
+
 }
 
     
