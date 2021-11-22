@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+  
+  table {
+    margin: 10px auto;
+ 
+    padding-bottom: 100px;
+
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px #7fb9c2;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    
+ 
+  }
+  
+  td, th {
+    border: 1px solid  hsl(0, 0%, 20%);
+    padding: 10px 10px;
+  }
+
+  tfoot {
+      background-color:  #628ca6;
+      text-align: center;
+	  font-size: 0.75em;
+	  font-weight: bold;
+  }
+
+  tr:first-child th {
+      font-size: 25px;
+      background-color: #7fb9c2;
+      color: black;
+      font-weight: bold;
+  }
+  
+  th{
+      background-color: #628ca6;
+      color: white;
+      font-size: 10px;
+
+	  padding: 7px 15px;
+     
+  }
+
+  tbody {
+      text-align: center;
+      font-size: 10px;
+	  color: black;
+  }
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+}
+
+#nov-goal {
+    background-color: #628ca6;
+    color:  white;
+}
+     
+
+@media only screen and (min-width: 620px) {
+
+    tr:first-child th {
+        font-size: 20px;
+    }
+
+    th {
+    font-size: 20px;
+    }
+
+    tbody {
+        font-size: 20px;
+    }
+	
+
+}
+
+body{
+  
+    background-color: #e7f0ed;
+   
+}
+
+
+
+
+  
+  
