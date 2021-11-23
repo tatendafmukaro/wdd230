@@ -29,8 +29,18 @@ main figure{
 
 main figure:hover {
 	transform: scale(1.1);
-	box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;
 }
+
+.weather-summary {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 18px;
+  }
+  
+  .weather-summary h3 {
+    font-size: 17px;
+  }
   
 }
 

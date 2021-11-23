@@ -20,16 +20,18 @@ function toggleMenu(){
 // friday banner querry
 const fridayBanner = document.querySelector('#friday-banner')
 
-// wind chill calculator
-let temp = document.querySelector(".temperature").textContent;
-let ws = document.querySelector(".windspeed").textContent;
-let windchill_value = '34';
+// wind chill calculator first 
+// let temp = document.querySelector(".temperature").textContent;
+// let ws = document.querySelector(".windspeed").textContent;
+// let windchill_value = '34';
 
-if ((temp <= 50) && (ws > 3)) {
-    windchill_value = Math.round(35.74 + (0.6215 * temp ) - (35.75 * Math.pow(ws, 0.16)) + ((0.4275 * temp) * Math.pow(ws, 0.16)));
-} 
+// if ((temp <= 50) && (ws > 3)) {
+//     windchill_value = Math.round(35.74 + (0.6215 * temp ) - (35.75 * Math.pow(ws, 0.16)) + ((0.4275 * temp) * Math.pow(ws, 0.16)));
+// } 
 
-document.querySelector(".windchill").textContent = windchill_value;
+// document.querySelector(".windchill").textContent = windchill_value;
+
+
 
 /*Lazy Image Loading ...........................*/
 
