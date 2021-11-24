@@ -28,7 +28,7 @@ fetch(forecastAPI)
       
       for (i = 0; i < time.length; i++) {
           const desc = time[i].weather[0].description;
-          document.getElementById("day" + (i+1) + "Temp").textContent = time[i].main.temp.toFixed(1); // temperature
+          document.getElementById("day" + (i+1) + "Temp").textContent = time[i].main.temp.toFixed(0); // temperature
           document.getElementById("img" + (i+1)).src = "https://openweathermap.org/img/wn/" + time[i].weather[0].icon + '@2x.png'; // icons
           document.getElementById("img" + (i+1)).setAttribute('alt', desc); // description
     }

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>wdd230assignmenthomepage </title>
+	<meta name="author" content="name">
+	<meta name="description" content="description here">
+	<meta name="keywords" content="keywords,here">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/small.css">
+	<link rel="stylesheet" href="css/medium.css">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+	 </head>
+
+<body >
+	<div class="friday-banner">Saturday = Preston Pancakes in the Park! &#129383;<br> | Friday Treats - Free Pizza and Gifts | Preston Weekend Climate Party on Saturday
+    </div>
+
+	<header>
+		<picture> <img src="images//weather-icon-png-11063.png" alt="weather-logo"> </picture>
+		<section class="headings">
+			<h1>
+          Globe360 Climate Watch 
+        </h1>
+			<p class="theme">The best Choice for weather updates </p>
+		</section>
+	</header>
+	<nav>
+		<button onclick="toggleMenu()"> &#9776; </button>
+		<ul id="menu" class="mainNav">
+			<li class="active"> <a href="https://tatendafmukaro.github.io/wdd230/lesson9/index.html">Home
+          </a> </li>
+			<li > <a href="https://tatendafmukaro.github.io/wdd230/lesson10/preston-10.html"> Preston
+          </a> </li>
+			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/sodasprings.html">Soda Springs
+          </a> </li>
+			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/fishhaven.html">Fish Haven
+          </a> </li>
+			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson9/stormcenter.html">Storm Center
+          </a> </li>
+			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson7/gallery-7.html">Gallery
+          </a> </li>
+		</ul>
+	</nav>
+	<main class="main-page">
+		<!--<h2>WDD 230: Site Plan Home Page</h2>  -->
+		<!-- <h2 class="page-title">Preston Idaho
+      </h2> -->
+		<section class="empty-container1">
+			<h2 class="page-title">Preston Idaho</h2>
+			<picture>
+				<source srcset="images/prestonpage3.jpg" media="(min-width: 300px) and (max-width: 599px)">
+				<source srcset="images/prestonpage2.jpg" media="(min-width: 600px) and (max-width: 799px)">
+				<source srcset="images/prestonpage1.jpg" media="(min-width: 800px) and (max-width: 1200px)"> <img src="images/prestonpage1.jpg" alt="preston-banner"> </picture>
+			<!-- <section class="stats">
+				<h2  class="summary-title" >Weather Summary</h2>
+				<div class="summarygrid">
+				<p>Wind Chill: <span class="windchill"> </span>°F</p>
+				<p>Temperature:<span class="temperature">76</span> °F</p>
+				<p>Wind Speed: <span class="windspeed">10</span> mph</p>
+			</div>
+			</section> -->
+			<section class="weather-summary">
+			
+				<h3>Weather Summary</h3>
+				<p class="label">Present:</p>
+				<p class="value"><span id="description"></span> <span id="current"></span> &deg;F</p>
+				<p class="label">High:</p>
+				<p class="value"><span id="high"></span> &deg;F</p>
+				<p class="label">Wind Chill:</p>
+				<p class="value"><span id="wind"></span></p>
+				<p class="label">Humidity:</p>
+				<p class="value"><span id="humidity"></span>%</p>
+				<p class="label">Wind Speed:</p>
+				<p class="value"><span id="speed"></span> mph</p>
+			  </section>
+		</section>
+		<br>
+		<!-- <section class="weather-focust">
+			<h2>5 Day Weather Forecast
+        </h2>
+			<div class="grid">
+				<div class="grid-col"> <span class="col-head">Monday
+            </span>
+					<br>
+					<br> <img src="images\cloudy.png" alt="weekdays">
+					<br>
+					<br> <span class="data">55 &#8451;
+            </span> </div>
+				<div class="grid-col"> <span class="col-head">Tuesday
+            </span>
+					<br>
+					<br> <img src="images\cloud.png" alt="weekdays">
+					<br>
+					<br> <span class="data">46 &#8451;
+            </span> </div>
+				<div class="grid-col"> <span class="col-head">Wednesday
+            </span>
+					<br>
+					<br> <img src="images\sunny.png" alt="weekdays">
+					<br>
+					<br> <span class="data">23 &#8451;
+            </span> </div>
+				<div class="grid-col"> <span class="col-head">Thursday
+            </span>
+					<br>
+					<br> <img src="images\sunny.png" alt="weekdays">
+					<br>
+					<br> <span class="data">20 &#8451;
+            </span> </div>
+				<div class="grid-col"> <span class="col-head">Friday
+            </span>
+					<br>
+					<br> <img src="images\sunny.png" alt="weekdays">
+					<br>
+					<br> <span class="data">32 &#8451;
+            </span> </div>
+				<div class="grid-col"> <span class="col-head">Saturday
+            </span>
+					<br>
+					<br> <img src="images\cloudy.png" alt="weekdays">
+					<br>
+					<br> <span class="data">33 &#8451;
+            </span> </div>
+			</div>
+		</section>
+		<section class="article1"> -->
+		
+
+			<h2>5-Day Weather Forecast<br><span id="subtitle"></span></h2>
+			<hr>
+			<div id="forecast">
+			  <div class="days">
+				<p class="weekday" id="day1"></p>
+				<p class="icon"><img src="./images/placeholder-icon.png" alt="" id="img1"></p>
+				<p class="current-temp"><span id="day1Temp"></span> &deg;F</p>
+			  </div>
+			  <div class="days">
+				<p class="weekday" id="day2"></p>
+				<p class="icon"> <img src="./images/placeholder-icon.png" alt="" id="img2"></p>
+				<p class="current-temp"><span id="day2Temp"></span> &deg;F</p>
+			  </div>
+			  <div class="days">
+				<p class="weekday" id="day3"></p>
+				<p class="icon"> <img src="./images/placeholder-icon.png" alt="" id="img3"></p>
+				<p class="current-temp"><span id="day3Temp"></span> &deg;F</p>
+			  </div>
+			  <div class="days">
+				<p class="weekday" id="day4"></p>
+				<p class="icon"><img src="./images/placeholder-icon.png" alt="" id="img4"></p>
+				<p class="current-temp"><span id="day4Temp"></span> &deg;F</p>
+			  </div>
+			  <div class="days">
+				<p class="weekday" id="day5"></p>
+				<p class="icon"><img src="./images/placeholder-icon.png" alt="" id="img5"></p>
+				<p class="current-temp"><span id="day5Temp"></span> &deg;F</p>
+			  </div>
+			</div>
+
+		<section class="article1">
+			<br>
+			<h3> FAQ's
+        </h3>
+			
+			<hr>
+			<p>
+				<picture> <img src="images/preston-2.jpg" alt="preston-banner"> </picture> 
+				What is the most humid month in Preston? <br>
+With an average relative humidity of 90%, January is the most humid month in Preston, Idaho. 
+<br><br>How much does it rain in Preston?<br>
+In Preston, during the entire year, the rain falls for 127.4 days and collects up to 18.27" (464mm) of precipitation.
+When does it snow in Preston?<br><br>
+January through May, September through December are months with snowfall.
+How much does it snow in Preston?<br>
+In Preston, Idaho, during the entire year, snow falls for 83.8 days, and aggregates up to 60.12" (1527mm) of snow.<br><br>
+When does it snow the most in Preston?<br>
+January is the month with the most snowfall. Snow falls for 17.6 days and accumulates 16.73" (425mm) of snow.
+What is the month with the least sunshine in Preston?<br><br>
+
+The most pleasant months of the year for Idaho are June, September and August. In Idaho, there are 3 comfortable months with high temperatures in the range of 70-85°. July is the hottest month for Idaho with an average high temperature of 85.4°, which ranks it as about average compared to other states. December is the snowiest month in Idaho with 13.7 inches of snow, and 7 months of the year have significant snowfall. Days with noticeable humidity are rare throughout the year.
+ </p>
+		</section>
+	</main>
+	<footer>
+		<hr>
+		<section class="contact-grid">
+			<div class="contacts1">
+				<h3>Preston Weather Site -  Please do contact us.
+          </h3>
+				<p>North ,Preston, USA
+					<br> 000378748329
+					<br> globe360.weather.com
+					<br>
+					<br>
+					<a href="https://www.facebook.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Ffacebook.png?1621069627712" alt="facebook"> </a>
+					<a href="https://www.youtube.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Fyoutube.png?1621069627712" alt="youtube"> </a>
+					<a href="https://twitter.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Ftwitter.png?1621069627712" alt="twitter"> </a>
+				</p>
+			</div>
+			<div class="second-item"> <img src="images/map-image.PNG" alt="prestonmap">Preston Map </div>
+		</section>
+		<hr>
+		<br>
+		<br> &copy; 2021 | Globe360 Climate Watch | Tatenda F. Mukaro | Zimbabwe | <a href="https://tatendafmukaro.github.io/wdd230/lesson3/index.html">Site Plan |
+      </a>Weather API courtesy of <a href="https://openweathermap.org/">Open Weather Maps
+	</a>
+		<br> <span id="theyear">
+      </span> <span id="cd"> 
+      </span> </footer>
+	<script src="js/friday-banner.js"></script>
+	<script defer src="js/weathercast.js"></script>
+	<script src="js/weathersummary.js"></script>
+	<script src="js/scripts.js"></script>
+
+	
+</body>
+
+</html>
