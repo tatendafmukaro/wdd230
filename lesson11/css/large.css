@@ -1,5 +1,6 @@
-@media only screen and (min-width: 60em){
+/* @media only screen and (min-width: 60em){ */
 
+  @media only screen and (min-width: 960px) {
     nav button {
         display: none;
     }
@@ -33,9 +34,11 @@ main figure:hover {
 
 .weather-summary {
     position: absolute;
-    top: 15px;
-    left: 30px;
-    font-size: 18px;
+    top: 250px;
+    left: 100px;
+    font-size: 15px;
+    border-color:whitesmoke;
+    border-style: groove;
   }
   
   .weather-summary h3 {

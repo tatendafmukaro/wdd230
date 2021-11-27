@@ -245,7 +245,7 @@ nav ul.mainNav{
   
   }
   
-  .weathersummary{
+  /* .weathersummary{
     position: absolute;
     top: 60px;
     left: 70px;
@@ -254,7 +254,7 @@ nav ul.mainNav{
     margin: 10px auto;
     padding: 10px;
     box-shadow: 0 0 30px #777;
-  }
+  } */
 
   .article1{
 
@@ -277,6 +277,30 @@ nav ul.mainNav{
   }
   .article1 h3{
     text-align: center;
+  }
+  .article2{
+
+    display: block;
+    padding: 20px;
+    margin: 20px;
+ 
+  }
+
+
+  .article2 img{
+    max-width: 20%;
+    border-radius: 5px;
+    float: left;
+    /* margin-left: 15px;
+    margin-bottom: 5px; */
+    margin-top: -50px;
+    padding: 10px;
+   
+
+
+  }
+  .article2 h3{
+    text-align: left;
   }
 
 
@@ -526,7 +550,8 @@ margin:8px auto 10px auto;
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
+  /* grid-template-columns: repeat(5, 1fr); */
   text-align: center;
   background-color:#000E1B;
   font-family: 'Arial', sans-serif;
@@ -539,38 +564,36 @@ margin:8px auto 10px auto;
 
 .days:first-child {
   grid-column: 1/2;
-  border-bottom-style: groove;
-  border-left-style: groove;
-  border-top-style: groove;
+  border: white;
+ border-style: solid;
+ 
 }
 
 .days:nth-child(2) {
   grid-column: 2/3;
-  border-bottom-style: groove;
-  border-left-style: groove;
-  border-top-style: groove;
+  border: white;
+ border-style: solid;
+ 
 }
 
 .days:nth-child(3) {
   grid-column: 3/4;
-  border-left-style: groove;
-  border-bottom-style: groove;
-  border-right-style: groove;
-  border-top-style: groove;
+  border: white;
+ border-style: solid;
+ 
 }
 
 .days:nth-child(4) {
   grid-column: 4/5;
-  border-bottom-style: groove;
-  border-right-style: groove;
-  border-top-style: groove;
+  border: white;
+ border-style: solid;
+  
 }
 
 .days:nth-child(5) {
   grid-column: 5/6;
-  border-bottom-style: groove;
-  border-right-style: groove;
-  border-top-style: groove;
+ border: white;
+ border-style: solid;
 }
 
 .weekday {
@@ -611,6 +634,7 @@ margin:8px auto 10px auto;
 
 
 .weather-summary {
+  position: sticky;
   background: radial-gradient(#eee, orange);
   box-shadow: 0 0 30px #333;
   opacity: 1;
@@ -624,7 +648,9 @@ margin:8px auto 10px auto;
   grid-gap: 5px;
   line-height: 1px;
   text-align: left;
-  font-style: italic;
+  font-style: none;
+
+
 }
 
 .weather-summary h3{
@@ -632,17 +658,23 @@ margin:8px auto 10px auto;
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 0px;
+  
+  
 }
 
 .weather-summary p.label{
   grid-column: 1/2;
   text-align: right;
+  text-align: left;
+  font-style: italic;
   
 }
 
 .weather-summary p.value {
   grid-column: 2/3;
   color: black;
+  text-align: left;
+  font-style: italic;
   
 }
 
@@ -654,6 +686,7 @@ margin:8px auto 10px auto;
 .weather-summary p{
   margin: 10px;
 }
+
 
 
 
