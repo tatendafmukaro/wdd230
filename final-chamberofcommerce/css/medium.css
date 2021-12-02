@@ -1,0 +1,63 @@
+/* @media (min-width: 32.5em){ */
+    @media only screen and (min-width: 640px) and (max-width: 960px){
+
+    nav ul.mainNav{
+        display:flex;
+      
+      }
+
+    nav ul {
+        display: flex;
+        
+       
+    }
+    
+    nav ul li {
+        flex: 1 1 100%;
+        
+    }
+
+   
+    nav button {
+        display: none;
+    }
+    .stats {
+        position: absolute;
+  
+    }
+  
+    /* gallery page css */
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+
+ .weather-summary {
+	   position: absolute;
+       /* position: sticky; */
+	   top: 230px;
+	   left: 50px;
+	   font-size: 16px;
+       border-radius: 5px;
+       border-color:whitesmoke;
+       border-style: groove;
+	 }
+	 
+	 .weather-summary h3 {
+	   font-size: 15px;
+	 }
+
+
+}
+
+
+    
+
+
+
+
+
+

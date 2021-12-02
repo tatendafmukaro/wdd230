@@ -1,0 +1,154 @@
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #02040F;
+  
+  }
+ 
+  h1{
+    text-align: center;  
+    color: #002642;
+    font-family: 'Amatic SC', cursive,sans-serif ,arial;
+    
+   
+  }
+  h1 img{
+    display: inline-block;
+  }
+
+
+
+  h2{
+    text-align: left;
+  }
+  
+  header{
+    
+    margin : 0 ;
+    background-color: #E5DADA;
+    border-radius: 5px;
+    padding: 0px;
+  }
+
+  nav ul{
+   display: block;
+   list-style: none;
+   margin: 0 auto;
+   padding: 0;
+  }
+  
+  nav ul li { 
+    flex: 1 1 100%; 
+    margin: 0 auto;
+    font-size: 17px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bolder;
+   
+  
+   } 
+
+   nav ul li  a{
+    color: black;
+    text-decoration: none;
+
+  
+    padding: 0;
+    margin: 0;
+   
+   }
+   
+   nav ul li a:hover {
+    background-color: yellow;
+  }
+ 
+
+
+  
+  header img{ 
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+   
+ 
+  
+  }
+
+
+  header h1{ 
+    padding: 20px;
+   
+  
+  }
+  main{
+    background-color: #E5DADA;
+    padding: 10px;
+  }
+  .main-section{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+  
+
+  }
+  .main-section img{
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+   
+ 
+  }
+
+  p{
+    padding: 10px;
+    background-color: gainsboro;
+  }
+  
+  footer{
+   border-radius: 5px;
+   text-align: center;
+   background-color: #000E1B;
+   color : white;
+   margin-top: 100px ;
+   padding: 10px;
+  }
+  footer a{
+      color: white;
+  }
+  
+
+
+  .colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: #02040F;
+    color: white;
+  }
+  .secondary {
+    background-color: #840032;
+  }
+  .accent1 {
+    background-color: #E59500;
+  }
+
+  .accent2{
+    background-color: #E5DADA;
+  }
+  .accent3{
+    background-color: black;
+  
+  }

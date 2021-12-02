@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>wdd230assignmenthomepage </title>
+	<meta name="author" content="name">
+	<meta name="description" content="description here">
+	<meta name="keywords" content="keywords,here">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/small.css">
+	<link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="friday-banner">Saturday = Preston Pancakes in the Park! &#129383;<br> | Friday Treats - Free Pizza and Gifts | Preston Weekend Climate Party on Saturday
+    </div>
+	<header>
+		<picture> <img src="images//weather-icon-png-11063.png" alt="weather-logo"> </picture>
+		<section class="headings">
+			<h1>
+          Globe360 Climate Watch 
+        </h1>
+			<p class="theme">The best Choice for weather updates </p>
+		</section>
+	</header>
+	<nav>
+		<button onclick="toggleMenu()"> &#9776; </button>
+		<ul id="menu" class="mainNav">
+			<li > <a href="https://tatendafmukaro.github.io/wdd230/lesson9/index.html">Home
+          </a> </li>
+			<li > <a href="https://tatendafmukaro.github.io/wdd230/lesson10/preston-10.html"> Preston
+          </a> </li>
+			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/sodasprings.html">Soda Springs
+          </a> </li>
+			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/fishhaven.html">Fish Haven
+          </a> </li>
+			<li class="active"> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/stormcenter.html">Storm Center
+          </a> </li>
+			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson7/gallery-7.html">Gallery
+          </a> </li>
+		</ul>
+	</nav>
+	<main class="main-page">
+		<header class="stormheader">
+            <h2>Storm Center Update</h2> 
+            <br><br>
+        </header>
+        <h3 class="stormheadrh3" > Contact us for any quiries you might have</h3>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <label class="pinfo">Full Name: <input type="text" name="fname" required placeholder="Tatenda Felix Mukaro"
+                        pattern="[A-Za-z]{5}"></label>
+                <label class="pinfo">Email: <input type="email"></label>
+                <label class="pinfo">Phone Number: <input type="tel" name="phone" placeholder="803555789"
+                        required></label>
+                        <label class="pinfo">Zip Code: <input type="text" name="phone" placeholder="Enter Zip Code"
+                            required></label>
+
+            </fieldset>
+            <fieldset>
+                <label class="abtstm">Storm Date: <input type="date" name="stormdate" required></label>
+        
+                <label class="abtstm">Storm Type
+                    <select name="typeofstorm">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="flashflood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </select>
+                </label>
+
+                <label class="abtstm">Storm Severity</label>
+                <p>0= Fun 10= Danger Zone</p>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <label class="region">Storm Region
+                    <select name="region">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="fishhaven">Fish Haven</option>
+                        <option value="sodasprings">Soda Springs</option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+
+            <!--RADIO-->
+            <fieldset>
+                <legend>Are you in Danger-Zone?</legend>
+                <div class="danger">
+                    <label for="yes"><input type="radio" id="yes" name="indanger" value="yes">
+                        Yes</label>
+                </div>
+                <div class="danger">
+                    <label for="maybe"><input type="radio" id="maybe" name="indanger" value="maybe"> Maybe</label>
+                </div>
+                <div class="danger">
+                    <label for="no"><input type="radio" id="no" name="indanger" value="no"> No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+
+                <div id="moreinfo">
+                    <label for="moreinfo1">Update us on the nature of the storm</label>
+                    <textarea name="moreinfo" id="moreinfo1" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <div>
+            <input id="submitbutton" type="submit" value="Thank you for reporting!">
+        </div>
+        </form>
+	</main>
+	<footer>
+		<hr>
+		<section class="contact-grid">
+			<div class="contacts1">
+				<h3>Preston Weather Site -  Please do contact us.
+          </h3>
+				<p>North ,Preston, USA
+					<br> 000378748329
+					<br> globe360.weather.com
+					<br>
+					<br>
+					<a href="https://www.facebook.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Ffacebook.png?1621069627712" alt="facebook"> </a>
+					<a href="https://www.youtube.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Fyoutube.png?1621069627712" alt="youtube"> </a>
+					<a href="https://twitter.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Ftwitter.png?1621069627712" alt="twitter"> </a>
+				</p>
+			</div>
+			<div class="second-item"> <img src="images/map-image.PNG" alt="prestonmap">Preston Map </div>
+		</section>
+		<hr>
+		<br>
+		<br> &copy; 2021 | Globe360 Climate Watch | Tatenda F. Mukaro | Zimbabwe | <a href="https://tatendafmukaro.github.io/wdd230/lesson3/index.html">Site Plan
+      </a>
+		<br> <span id="theyear">
+      </span> <span id="cd"> 
+      </span> </footer>
+    <script src="js/friday-banner.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
