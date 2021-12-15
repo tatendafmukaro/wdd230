@@ -23,75 +23,160 @@
     </div>
 
 	<header>
-		<picture> <img src="images//weather-icon-png-11063.png" alt="weather-logo"> </picture>
+		<picture> <img src="images//logo-1.png" alt="weather-logo"> </picture>
 		<section class="headings">
 			<h1>
-          Globe360 Climate Watch 
+				Harare Chamber of Commerce
         </h1>
-			<p class="theme">The best Choice for weather updates </p>
+			<p class="theme">Network, Engage and Collaborate </p>
 		</section>
+		<nav>
+			<button onclick="toggleMenu()"> &#9776; </button>
+			<ul id="menu" class="mainNav">
+				<li class="active"> <a href="https://tatendafmukaro.github.io/wdd230/final-chamberofcommerce/index.html">Home
+			  </a> </li>
+				<li > <a href="https://tatendafmukaro.github.io/wdd230/final-chamberofcommerce/harare.html"> Harare
+			  </a> </li>
+				<li> <a href="https://tatendafmukaro.github.io/wdd230/final-chamberofcommerce/join.html">Join
+			  </a> </li>
+				<li> <a href="https://tatendafmukaro.github.io/wdd230/final-chamberofcommerce/directory.html">Directory
+			  </a> </li>
+				<li> <a href="https://tatendafmukaro.github.io/wdd230/final-chamberofcommerce/contact.html">Contact
+			  </a> </li>
+			
+			  <li> <a href="https://tatendafmukaro.github.io/wdd230/final-chamberofcommerce/chamber-siteplan/index.html">SitePlan
+			
+			</a> </li>
+			
+			</ul>
+		</nav>
+		<div id="current">
+			<p>Current temp: <span id="currentTemp"></span>&#8457;</p>
+			<p id="currentcond"><span id="condition"></span></p>
+			<p>Humidity: <span id="humidity"></span>%</p>
+		  </div>
 	</header>
-	<nav>
-		<button onclick="toggleMenu()"> &#9776; </button>
-		<ul id="menu" class="mainNav">
-			<li class="active"> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/index.html">Home
-          </a> </li>
-			<li > <a href="https://tatendafmukaro.github.io/wdd230/lesson11/preston-10.html"> Harare-City
-          </a> </li>
-			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/sodasprings.html">Join
-          </a> </li>
-			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/fishhaven.html">Directory
-          </a> </li>
-			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson11/stormcenter.html">Contact Us
-          </a> </li>
-			<li> <a href="https://tatendafmukaro.github.io/wdd230/lesson7/gallery-7.html">Gallery
-          </a> </li>
-		  <li> <a href="https://tatendafmukaro.github.io/wdd230/final-chamberofcommerce/chamber-siteplan/index.html">Site-Plan
-		
-		</a> </li>
-		
-		</ul>
-	</nav>
+	
     
   <div >
+	<section class="empty-container1">
+		<h2 class="page-title"> 
+		</h2>
+		  <picture>
+			  <source srcset="images/preston-1-small.jpg" media="(min-width: 300px) and (max-width: 599px)">
+			  <source srcset="images/preston-1-medium.jpg" media="(min-width: 600px) and (max-width: 799px)">
+			  <source srcset="images/banner-harare.jpg" media="(min-width: 800px) and (max-width: 1200px)"> <img src="images/banner-harare.jpg" alt="preston-banner"> </picture>
+			  <!-- <section class="stats">
+			  <h2  class="summary-title" >Stay Up - Todate </h2>
+			  <div class="summarygrid">
+			  <p>Wind Chill: <span class="windchill"> </span>°F</p>
+			  <p>Temperature:<span class="temperature">76</span> °F</p>
+			  <p>Wind Speed: <span class="windspeed">10</span> mph</p>
+		  </div>
+		
+		  </section> -->
+		  <!-- <h1>Business Leadership</h1>
+		  <p>The Harare Chamber of Commerce and its members
+		  is a lifeline for business people in zimbabwe
+				  </p> -->
+
+				  <section class="weather-summary">
+			
+					<h3>Business Leadership</h3>
+					<p>Harare Chamber of Commerce and its members
+						is a lifeline for business people in zimbabwe</p>
+					
+				  </section>
+	
+	  </section>
+		
 	<main class="main-page">
         <!--<h2>WDD 230: Site Plan Home Page</h2>  -->
-		
-          <section class="empty-container1">
-			<h2 class="page-title"> Welcome Home to Idaho State
-			</h2>
-              <picture>
-                  <source srcset="images/preston-1-small.jpg" media="(min-width: 300px) and (max-width: 599px)">
-                  <source srcset="images/preston-1-medium.jpg" media="(min-width: 600px) and (max-width: 799px)">
-                  <source srcset="images/preston-1-large.jpg" media="(min-width: 800px) and (max-width: 1200px)"> <img src="images/preston-1-large.jpg" alt="preston-banner"> </picture>
-              <!-- <section class="stats">
-                  <h2  class="summary-title" >Stay Up - Todate </h2>
-                  <div class="summarygrid">
-                  <p>Wind Chill: <span class="windchill"> </span>°F</p>
-                  <p>Temperature:<span class="temperature">76</span> °F</p>
-                  <p>Wind Speed: <span class="windspeed">10</span> mph</p>
-              </div>
-			
-              </section> -->
-			
-          </section>
+	<div class="three-boxes">
+	<div>Network</div>
+		<div>Engage</div>
+		<div>Collaborate</div>
+	</div>
           <br>
-		  <h3 class="weather-history">Idaho Weather History</h3>
+		  <h3 class="weather-history">Major City Highlights</h3>
           <hr>
-		  
-        <div class="town-data"></div>
+		  <section class="events">
+			<h3>Upcoming Events</h3>
+			  <p>22 December: Chrismas Boxing Day</p>
+			  <p>25 December : Christmas Day</p>
+			  <p>1 January : SME and Business Symposium</p>
+		  </section>
+        <!-- <div class="town-data"></div> -->
         <hr>
        
         <section class="article2">
-			<h2>Idaho Town Weather Highlights</h2>
-			<picture> <img src="images/weatherstation-1.jpg" alt="weather-station"> </picture> 
+			<h2>Our Purpose</h2>
+			<picture> <img src="images/trust-tru-katsande-fckcmcbPF14-unsplash.jpg" alt="weather-station"> </picture> 
             <p > 
-				Weather in Idaho
-				The most pleasant months of the year for Idaho are June, September and August. In Idaho, there are 3 comfortable months with high temperatures in the range of 70-85°. July is the hottest month for Idaho with an average high temperature of 85.4°, which ranks it as about average compared to other states. </p>
-<p>December is the snowiest month in Idaho with 13.7 inches of snow, and 7 months of the year have significant snowfall. Days with noticeable humidity are rare throughout the year.</p>
+				Harare Chamber of Commerce seeks to provide business updates and great networking opportunities w to everyone and help them stay informed</p>
+<p>Present current business and industry updates ,to enhance societal benefits, including protection of life and property, public health and safety, and support of economic prosperity and quality of life.</p>
         </section>
+		<h2>3-Day Weather Forecast<br><span id="subtitle"></span></h2>
+		<hr>
+		<div id="forecast">
+		  <div class="days">
+			<p class="weekday" id="day1"></p>
+			<p class="icon"><img src="./images/placeholder-icon.png" alt="" id="img1"></p>
+			<p class="current-temp"><span id="day1Temp"></span> </p>
+		  </div>
+		  <div class="days">
+			<p class="weekday" id="day2"></p>
+			<p class="icon"> <img src="./images/placeholder-icon.png" alt="" id="img2"></p>
+			<p class="current-temp"><span id="day2Temp"></span> </p>
+		  </div>
+		  <div class="days">
+			<p class="weekday" id="day3"></p>
+			<p class="icon"> <img src="./images/placeholder-icon.png" alt="" id="img3"></p>
+			<p class="current-temp"><span id="day3Temp"></span> </p>
+		  </div>
+		  <!-- <div class="days">
+			<p class="weekday" id="day4"></p>
+			<p class="icon"><img src="./images/placeholder-icon.png" alt="" id="img4"></p>
+			<p class="current-temp"><span id="day4Temp"></span> &deg;F</p>
+		  </div>
+		  <div class="days">
+			<p class="weekday" id="day5"></p>
+			<p class="icon"><img src="./images/placeholder-icon.png" alt="" id="img5"></p>
+			<p class="current-temp"><span id="day5Temp"></span> &deg;F</p>
+		  </div> -->
+		</div>
+		<h2>Our Partners</h2>
+        <hr><br>
 
-	
+        <div class="gallery">
+            
+        <figure class="image1"><img src='images/hello-placeholder.jpg' data-src='images\logo2.jpg' alt='nature'>
+            <figcaption>Open for Business</figcaption>
+        </figure>
+        <figure class="image1"><img src='images/hello-placeholder.jpg' data-src='images\logo3.jpg' alt='nature'>
+            <figcaption>Satistying your Taste</figcaption>
+        </figure>
+        <figure class="image1"><img src='images/hello-placeholder.jpg' data-src='images\logo4.jpg' alt='nature'>
+            <figcaption>Business Innovations</figcaption>
+        </figure>
+        <figure class="image1"><img src='images/hello-placeholder.jpg' data-src='images\logo5.jpg' alt='nature'>
+            <figcaption> Entreprenuers Hub</figcaption>
+        </figure>
+        <figure class="image1"><img src='images/hello-placeholder.jpg' data-src='images\logo6.jpg' alt='nature'>
+            <figcaption>Photo Genius</figcaption>
+        </figure>
+        <figure class="image1"><img src='images/hello-placeholder.jpg' data-src='images\logo7.jpg' alt='nature'>
+            <figcaption>B2B Modelling</figcaption>
+        </figure>
+        
+    </div>
+
+	<section class="forecast">
+        <!-- <div><h3>3-Day Forecast</h3></div> -->
+        <div id="day1"></div>
+        <div id="day2"></div>
+        <div id="day3"></div>
+      </section>
 
 	</main>
 </div>
@@ -99,11 +184,11 @@
 		<hr>
 		<section class="contact-grid">
 			<div class="contacts1">
-				<h3>Idaho State Weather Site -  Please do contact us.
+				<h3>Harare Chamber of Commerce -  Please do contact us.
           </h3>
-				<p>Idaho State, USA
+				<p>Harare , Zimbabwe
 					<br> 000378748329
-					<br> globe360.weather.com
+					<br> hararechamber.org
 					<br>
 					<br>
 					<a href="https://www.facebook.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Ffacebook.png?1621069627712" alt="facebook"> </a>
@@ -111,11 +196,11 @@
 					<a href="https://twitter.com/" target="_blank"> <img src="https://cdn.glitch.com/ac9faafd-1c15-4490-a265-b645c5d87ba4%2Ftwitter.png?1621069627712" alt="twitter"> </a>
 				</p>
 			</div>
-			<div class="second-item"> <img src="images/Idaho_map2.jpg" alt="prestonmap"> Idaho Map </div>
+			<div class="second-item"> <img src="images/ben-masora-Oy5IKUo8lZM-unsplash.jpg" alt="prestonmap"> Focus Your View </div>
 		</section>
 		<hr>
 		<br>
-		<br> &copy; 2021 | Globe360 Climate Watch | Tatenda F. Mukaro | Zimbabwe | <a href="https://tatendafmukaro.github.io/wdd230/lesson3/index.html">Site Plan
+		<br> &copy; 2021 | Harare Chamber | Tatenda F. Mukaro | Zimbabwe | <a href="https://tatendafmukaro.github.io/wdd230/lesson3/index.html">Site Plan
       </a>
 		<br> <span id="theyear"> 
       </span> <span id="cd"> 
@@ -137,6 +222,7 @@
     <script src="js/imagehandling.js"></script>
 	<script src="js/friday-banner.js"></script>
     <!-- <script src="js/last-visit.js"></script> -->
+	<script src="js/weathercast.js"></script>
 	<script src="js/scripts.js">
 	</script>
 </body>

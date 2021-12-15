@@ -37,3 +37,16 @@ const fridayBanner = document.querySelector('#friday-banner')
 
 /* Index Home Page JSON */
 
+var apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=761705f2fff2232362c92545f641006c';
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    
+    document.getElementById('current').textContent = jsObject.main.temp.toFixed(1);
+    document.getElementById('description').textContent = jsObject.weather[0].description;
+    document.getElementById('description').style.textTransform = "capitalize";
+    document.getElementById('high').textContent = jsObject.main.temp_max.toFixed(1);
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementById('speed').textContent = jsObject.wind.speed;
+  });

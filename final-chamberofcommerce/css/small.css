@@ -1,10 +1,17 @@
 
 body{
     max-width: 100%;
-    background-color: orange;
+    /* background-color: orange; */
+    background-color: #E5DADA;
   
   }
- 
+
+
+  .empty-container1{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
   h1 img{
     display: inline-block;
@@ -18,11 +25,12 @@ body{
   
   header{
     
-    background-color: #000E1B;
+    background-color: #840032;
     padding: 5px 0;
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items:right;
+    justify-content:left;
+    padding: 20px;
 
   }
    
@@ -48,7 +56,7 @@ body{
   .text-wrapper{
     text-align: right;
     background-color: grey;
-    color: yellow;
+    color: #840032;
     padding: 5px;
     
     border-radius: 5px;
@@ -71,8 +79,8 @@ nav{
    display: block;
    list-style: none;
    margin: 0 auto;
-   padding: 0;
-   
+   padding: 10px;
+  margin-left: 80px;
   }
   
   nav ul li { 
@@ -102,9 +110,9 @@ nav{
 
 
    nav ul li  a{
-    color: black;
+    color: #E5DADA;
     text-decoration: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
    
    }
@@ -155,8 +163,8 @@ nav ul.mainNav{
     width: 100%;
     border: solid #000E1B 1px;
     background-color: gainsboro;
-    padding: 5px;
-    margin: 2px;
+    padding: 0px;
+    margin: 0px;
     
   }
   .empty-container2{
@@ -181,7 +189,7 @@ nav ul.mainNav{
   footer{
    border-radius: 5px;
    text-align: center;
-   background-color: #000E1B;
+   background-color:  #840032;
    color : white;
    margin-top: 100px ;
    padding: 10px;
@@ -333,7 +341,7 @@ nav ul.mainNav{
   position: sticky;
 	top: 200px;
 	right: 1000px;
-	background: radial-gradient(#eee, orange );
+	background: radial-gradient(#eee,#840032 );
 	border: 1px solid #000;
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #000E1B ;
@@ -396,7 +404,7 @@ padding: 5px;
 
 .last-visited{
   font-style: italic;
-  color: orange;
+  color: #840032;
 }
 
 
@@ -553,7 +561,7 @@ margin:8px auto 10px auto;
   grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
   /* grid-template-columns: repeat(5, 1fr); */
   text-align: center;
-  background-color:#000E1B;
+  background-color:#840032;
   font-family: 'Arial', sans-serif;
   padding: 10px;
 
@@ -597,7 +605,7 @@ margin:8px auto 10px auto;
 }
 
 .weekday {
-  background-color: orange;
+  background-color: grey;
   padding: 20px 5px 20px 5px;
   margin-top: 0;
   margin: 10px;
@@ -632,23 +640,19 @@ margin:8px auto 10px auto;
 
 
 
-
+/* 
 .weather-summary {
-  position: sticky;
-  background: radial-gradient(#eee, orange);
-  box-shadow: 0 0 30px #333;
-  opacity: 1;
-  font-family: 'Arial', sans-serif;
-  margin-top: 10px;
-  font-size: 15px;
-  display: grid;
-  padding: 15px;
-  grid-template-columns: 120px auto;
-  justify-content: center;
-  grid-gap: 5px;
-  line-height: 1px;
-  text-align: left;
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   
+} */
+
+.weather-summary{
+  background-color: #840032;
 }
 
 .weather-summary h3{
@@ -656,33 +660,51 @@ margin:8px auto 10px auto;
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 0px;
+  color: white;
   
   
 }
 
 .weather-summary p.label{
-  grid-column: 1/2;
+  grid-column: 1/4;
   text-align: right;
   text-align: left;
   font-style: italic;
+  color: white;
   
 }
 
 .weather-summary p.value {
   grid-column: 2/3;
-  color: black;
+  color: white;
   text-align: left;
   font-style: italic;
   
 }
 
-.weather-summary h3 {
-  font-size: 17px;
+/* .weather-summary h3 {
+  font-size: 100px;
   text-align: center;
+  color: white;
+  font-weight: bold;
+
+} */
+.weather-summary h3 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  
+
 }
 
+
 .weather-summary p{
-  margin: 10px;
+  margin: 0px;
+  padding: 20px;
+  grid-column: 1/3;
+  color: rgb(218, 200, 200);
+  
 }
 
 .eventts h2{
@@ -698,4 +720,138 @@ margin:8px auto 10px auto;
 
 
 
+.three-boxes {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
+  /* grid-template-columns: repeat(5, 1fr); */
+  text-align: center;
+  background-color:white;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  
 
+}
+/* 
+.three-boxes div{
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  background-color: #840032;
+  border:white;
+  border-style: groove;
+  padding: 60px;
+  margin-top: -300px;
+} */
+
+.three-boxes div{
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  background-color: #840032;
+  border:white;
+  border-style: groove;
+  padding: 10px;
+  margin-top: -100px;
+}
+
+/* .three-boxes div{
+  border-radius: 5px;
+  background-color: white;
+  border:white;
+  border-style: groove;
+  padding: 60px;
+  margin-top: -300px;
+} */
+
+
+
+
+
+@media only screen and (min-width: 640px) and (max-width: 960px){
+  
+  .three-boxes div{
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    background-color: #840032;
+    border:white;
+    border-style: groove;
+    padding: 60px;
+    margin-top: -300px;
+  }
+
+  /* .three-boxes div{
+    border-radius: 5px;
+    background-color: white;
+    border:white;
+    border-style: groove;
+    padding: 60px;
+    margin-top: -300px;
+  }
+   */
+
+  }
+
+  @media only screen and (min-width: 960px) {
+    .three-boxes div{
+      border-radius: 5px;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      background-color: #840032;
+      border:white;
+      border-style: groove;
+      padding: 60px;
+      margin-top: -300px;
+    }
+
+    /* .three-boxes div{
+      border-radius: 5px;
+      background-color: white;
+      border:white;
+      border-style: groove;
+      padding: 60px;
+      margin-top: -300px;
+    
+    } */
+
+  }
+
+  form fieldset {
+    margin: 2rem 0;
+    width: 300px;
+    border: 1px solid #243e36;
+    border-radius: 10px;
+    padding: 0.7rem 7%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: antiquewhite;
+  }
+  
+  form legend {
+    color: #36512e;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-weight: bold;
+  }
+  
+  form label.sbs {
+    display: inline;
+    padding: 0.75rem 0;
+  }
+  
+  form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+  }
+  
